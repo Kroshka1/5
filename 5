@@ -1,0 +1,6 @@
+def make_table() -> None:
+    exists1 = is_exists(file_data1)
+    exists2 = is_exists(file_data2)
+    if (not exists1 or not exists2):
+        logger.info('Файлы баз данных отстутствуют!')
+        update_database()
